@@ -32,3 +32,9 @@ Explore links lead to the official MCP Registry and documentation. This site doe
 JavaScript syntax passed. Browser checked at 552×736: intro, forward and reverse scrolling, chapter selection, final CTA, pin release, no horizontal overflow. Video advanced from 0 to 4.46 seconds and reversed to 0 while remaining paused. Final chapter reached 13.14 seconds. Motion off left zero pin spacers and displayed the final static scene. No console errors or warnings during these interactions. Full desktop and physical-device testing remain unverified.
 
 Text entrances use 0.88-second timeline transitions with restrained 16px movement; exits use 0.68 seconds and 12px movement. The timeline smoothing absorbs discrete wheel steps without intercepting native scroll input.
+
+## Vercel configuration
+
+The root `vercel.json` configures this as a static site and serves `dist/`. No dependency installation or build step is required. In Vercel, keep Root Directory at the repository root (blank / `.`), not `dist`, so the configuration is discovered. Framework Preset is Other, Output Directory is `dist`, and Build Command and Install Command are empty. Configuration changes apply on the next deployment.
+
+Without an output-directory override, Vercel can serve the repository root, which has no `index.html`, causing a 404 at `/`.
