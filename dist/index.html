@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#020b0c">
+  <meta name="description" content="Connect. The universal connection layer for AI. Discover the Model Context Protocol ecosystem through a cinematic, scroll-driven experience.">
+  <title>Connect — Intelligence, connected.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/plexus-poster.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/gsap.min.js"></script><script defer src="assets/ScrollTrigger.min.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#explore">Skip cinematic introduction</a>
+
+<main id="top">
+  <section class="cinema" aria-label="Connect cinematic introduction">
+<header class="navigation">
+  <a class="wordmark" href="#top" aria-label="Connect home"><svg class="brand-symbol" viewBox="0 0 32 32" aria-hidden="true"><path d="M12 5H5v7M20 5h7v7M5 20v7h7M27 20v7h-7M10 10l12 12M22 10 10 22"/></svg><span>connect<span class="wordmark-dot">.</span></span></a>
+  <nav aria-label="Main navigation"><a class="nav-explore" href="#explore">Explore servers</a><a class="nav-docs" href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer">Documentation <span class="external">↗</span></a><a class="nav-cta" href="#explore">Get started <span>↗</span></a></nav>
+</header>
+    <div class="film"><video id="plexus" muted playsinline preload="auto" poster="assets/plexus-poster.jpg" disablepictureinpicture aria-hidden="true"></video></div>
+    <div class="film-shade"></div><div class="edge-mark edge-left" aria-hidden="true"></div><div class="edge-mark edge-right" aria-hidden="true"></div>
+    <div class="sequence">
+      <article class="scene intro" data-scene="0">
+        <p class="eyebrow"><span class="status-light"></span> Intelligence, connected</p>
+        <h1>CONNECT</h1>
+        <p class="intro-tagline">The universal connection layer for AI.</p>
+        <p class="supporting">Your tools. Your data. A world of possibilities.</p>
+        <a class="text-link intro-link" href="#explore">Explore the ecosystem <span>↗</span></a>
+      </article>
+      <article class="scene" data-scene="1" aria-hidden="true" inert>
+        <p class="eyebrow">01 <span class="eyebrow-line"></span> Beyond the model</p>
+        <h2>Intelligence needs<br><span class="muted-type">a connection.</span></h2>
+        <p class="scene-description">Your AI is only as powerful as<br class="desktop-break"> the tools it can access.</p>
+      </article>
+      <article class="scene" data-scene="2" aria-hidden="true" inert>
+        <p class="eyebrow">02 <span class="eyebrow-line"></span> A common language</p>
+        <h2>One connection.<br><span class="mint-type">Every possibility.</span></h2>
+        <p class="scene-description">Discover the world of MCP servers.<br>Bring your AI closer to everything you do.</p>
+      </article>
+      <article class="scene" data-scene="3" aria-hidden="true" inert>
+        <p class="eyebrow">03 <span class="eyebrow-line"></span> Your world, within reach</p>
+        <h2>Tools. Data. Workflows.<br><span class="muted-type">All in the conversation.</span></h2>
+        <p class="scene-description">Connect your AI to the things<br class="desktop-break"> that power your work.</p>
+        <div class="ecosystem-tags" aria-hidden="true"><span>⌘ &nbsp;Tools</span><i>+</i><span>⌁ &nbsp;Data</span><i>+</i><span>⤴ &nbsp;Workflows</span></div>
+      </article>
+      <article class="scene finale" data-scene="4" aria-hidden="true" inert>
+        <p class="eyebrow"><span class="status-light"></span> Make the connection</p>
+        <h2>Your entire ecosystem.<br><span class="mint-type">Connected.</span></h2>
+        <p class="scene-description">The next step for your AI starts here.</p>
+        <a class="primary-button" href="#explore">Explore MCP servers <span>↗</span></a>
+      </article>
+    </div>
+    <div class="cinema-footer">
+      <div class="scroll-cue"><span class="scroll-icon" aria-hidden="true">↓</span><div><span class="cue-label">SCROLL TO CONNECT</span><span class="cue-sub">A world unfolds with you</span></div></div>
+      <nav class="chapters" aria-label="Cinematic chapters">
+        <button class="chapter active" data-progress="0" aria-label="Introduction" aria-current="step"><span>01</span><i></i></button>
+        <button class="chapter" data-progress="0.26" aria-label="Beyond the model"><span>02</span><i></i></button>
+        <button class="chapter" data-progress="0.47" aria-label="One connection"><span>03</span><i></i></button>
+        <button class="chapter" data-progress="0.69" aria-label="The ecosystem"><span>04</span><i></i></button>
+        <button class="chapter" data-progress="0.92" aria-label="Explore MCP servers"><span>05</span><i></i></button>
+      </nav>
+      <div class="film-options"><button id="motion-toggle" type="button" aria-pressed="false"><span class="motion-icon" aria-hidden="true">◉</span> Motion on</button><a href="#explore">Skip intro <span>↗</span></a></div>
+    </div>
+    <div class="progress-track" aria-hidden="true"><div class="progress-fill"></div></div>
+    <p id="film-status" class="film-status" role="status"></p>
+  </section>
+  <section id="explore" class="explore" aria-labelledby="explore-title" tabindex="-1">
+    <div class="section-kicker"><span class="status-light"></span> THE OPEN ECOSYSTEM <span class="section-number">01 / DISCOVER</span></div>
+    <div class="explore-heading"><h2 id="explore-title">Less distance.<br><span>More possibility.</span></h2><p>Great ideas need the right connections.<br>Explore the servers that bring external tools and data into your AI workflow.</p></div>
+    <a class="resource-row" href="https://registry.modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer"><span class="resource-icon">⌘</span><div><h3>Find your next connection</h3><p>Browse servers in the official MCP Registry.</p></div><span class="resource-meta">EXPLORE SERVERS</span><span class="row-arrow">↗</span></a>
+    <a class="resource-row" href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noopener noreferrer"><span class="resource-icon">↳</span><div><h3>Understand the protocol</h3><p>A shared language for AI, tools, and data.</p></div><span class="resource-meta">READ THE DOCS</span><span class="row-arrow">↗</span></a>
+    <footer class="site-footer"><a class="wordmark" href="#top">connect<span class="wordmark-dot">.</span></a><span>Intelligence is just the beginning.</span><a href="#top">Back to the experience ↑</a></footer>
+  </section>
+</main>
+<noscript><style>.scene:not(.intro){display:none}.chapters,#motion-toggle{display:none}</style></noscript>
+</body></html>
